@@ -2,14 +2,71 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+.title {
+  text-decoration: underline;
+  margin-top: 30px;
+}
+.box {
+  height: 50px;
+  margin: 30px auto 0;
+  position:relative;
+}
+.button {
+  border-radius: 20px;
+  border: none;
+  margin: 5px;
+  color: white;
+  background-color: darkcyan;
+  box-shadow: 3px 3px 3px darkgray;
+}
+
+
+/* .Card-list {
+  display: flex;
+}
+.Card {
+  margin: 50px auto;
+  border: 1px solid black;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+}
+.Card-img {
+  position: relative;
+  width: 100%;
+  
+}
+.Card-img img {
+  width: 100%;
+  
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+/* 휴대폰 */
+@media (max-width: 767px) { 
+  .box {
+    width: 30%;
+  }
+}
+/* 태블릿 */
+@media (min-width: 768px) {
+  .box {
+    width: 90%;
+  }
+}
+/* 데스크탑 */
+@media (min-width: 1024px) {
+  .box {
+    width: 57%;
   }
 }
 
